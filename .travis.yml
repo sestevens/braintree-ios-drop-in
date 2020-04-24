@@ -1,8 +1,8 @@
 language: objective-c
 xcode_workspace: BraintreeDropIn.xcworkspace
 xcode_scheme: DropInDemo
-xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11
-osx_image: xcode11.3
+xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone 11
+osx_image: xcode11
 
-script:
-  - xcodebuild -workspace BraintreeDropIn.xcworkspace -scheme DropInDemo -destination platform\=iOS\ Simulator,OS\=13.3,name\=iPhone\ 11 build test | bundle exec xcpretty -c
+# script:
+#   - xcodebuild -workspace BraintreeDropIn.xcworkspace -scheme DropInDemo -destination platform\=iOS\ Simulator,OS\=13.3,name\=iPhone\ 11 build test | bundle exec xcpretty -c
